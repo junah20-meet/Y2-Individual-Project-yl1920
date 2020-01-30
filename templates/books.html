@@ -7,19 +7,19 @@
 
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700,800" rel="stylesheet">
 
-    <link rel="stylesheet" href="{{url_for('static',filenme='css/bootstrap.css)}}">
-    <link rel="stylesheet" href="{{url_for('static',filename='css/animate.css)}}">
-    <link rel="stylesheet" href="{{url_for('static',filename='css/owl.carousel.min.css)}}">
+    <link rel="stylesheet" href="static/css/bootstrap.css">
+    <link rel="stylesheet" href="static/css/animate.css">
+    <link rel="stylesheet" href="static/css/owl.carousel.min.css">
 
-    <link rel="stylesheet" href="{{url_for('static',filename='css/magnific-popup.css)}}">
+    <link rel="stylesheet" href="static/css/magnific-popup.css">
 
 
-    <link rel="stylesheet" href="{{url_for('static',filename='fonts/ionicons/css/ionicons.min.css)}}">
-    <link rel="stylesheet" href="{{url_for('static',filename='fonts/fontawesome/css/font-awesome.min.css)}}">
-    <link rel="stylesheet" href="{{url_for('static',filename='fonts/flaticons/font/flaticon.css)}}">
+    <link rel="stylesheet" href="static/fonts/ionicons/css/ionicons.min.css">
+    <link rel="stylesheet" href="static/fonts/fontawesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="static/fonts/flaticons/font/flaticon.css">
 
     <!-- Theme Style -->
-    <link rel="stylesheet" href="{{url_for('static',filename='css/style.css)}}">
+    <link rel="stylesheet" href="static/css/style.css">
   </head>
   <body>
     
@@ -34,16 +34,16 @@
           <div class="collapse navbar-collapse" id="navbarsExample05">
             <ul class="navbar-nav ml-auto pl-lg-5 pl-0">
               <li class="nav-item">
-                <a class="nav-link active" href="home.html">Home</a>
+                <a class="nav-link active" href="{{url_for('home')}}">Home</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="books.html">Books</a>
+                <a class="nav-link" href="{{url_for('books')}}">Books</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="stories.html">Stories</a>
+                <a class="nav-link" href="{{url_for('stories')}}">Stories</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="api.html">Check your food</a>
+                <a class="nav-link" href="{{url_for('api')}}">Check your food</a>
               </li>
             </ul>
             
@@ -184,18 +184,18 @@
     </section> <!-- .section -->
 
     <!-- loader -->
-    <div id="loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#cf1d16"/></svg></div>
+   <!--  <div id="loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#cf1d16"/></svg></div>
+ -->
+    <script src="static/js/jquery-3.2.1.min.js"></script>
+    <script src="static/js/popper.min.js"></script>
+    <script src="static/js/bootstrap.min.js"></script>
+    <script src="static/js/owl.carousel.min.js"></script>
+    <script src="static/js/jquery.waypoints.min.js"></script>
 
-    <script src="js/jquery-3.2.1.min.js"></script>
-    <script src="js/popper.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/owl.carousel.min.js"></script>
-    <script src="js/jquery.waypoints.min.js"></script>
-
-    <script src="js/jquery.magnific-popup.min.js"></script>
-    <script src="js/magnific-popup-options.js"></script>
+    <script src="static/js/jquery.magnific-popup.min.js"></script>
+    <script src="static/js/magnific-popup-options.js"></script>
     
 
-    <script src="js/main.js"></script>
+    <script src="static/js/main.js"></script>
   </body>
 </html>
